@@ -1473,6 +1473,22 @@ th {
 .pull-left.flip {
   float: right !important;
 }
+.grid-report {
+  direction: ltr;
+}
+
+.page-form .awesomplete > ul {
+    left: auto;
+}
+
+.chart_area{
+	direction: ltr;
+}
+
+.grid-report .show-zero{
+	direction: rtl;
+}
+
 .navbar .navbar-search-icon{
   right: auto;
   left: 24px;
@@ -1582,20 +1598,4 @@ ul.tree-children {
 }
 .data-table {
   direction: ltr;
-}
-
-.grid-report {
-  direction: ltr;
-}
-
-.page-form .awesomplete > ul {
-    left: auto;
-}
-
-.chart_area{
-	direction: ltr;
-}
-
-.grid-report .show-zero{
-	direction: rtl;
 }

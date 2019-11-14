@@ -21,6 +21,150 @@
 	background: url("/assets/frappe/js/lib/slickgrid/images/collapse.gif") no-repeat center center;
 }
 
+/* palette colors*/
+.grid-report .plot {
+  margin: 15px;
+  display: none;
+  height: 300px !important;
+  width: 97% !important;
+}
+.grid-report .ui-widget {
+  border: none !important;
+  outline: none !important;
+  border-top: 1px solid #d1d8dd !important;
+  background-color: #fafbfc !important;
+}
+.grid-report .show-zero {
+  margin: 10px;
+  display: none;
+}
+.column-picker-dialog .column-list {
+  margin: 15px 0;
+  border: 1px solid #d1d8dd;
+}
+.column-picker-dialog .column-list .column-list-item {
+  padding: 10px;
+  border-bottom: 1px solid #d1d8dd;
+}
+.column-picker-dialog .column-list .column-list-item:last-child {
+  border-bottom: none;
+}
+.column-picker-dialog .column-list .sortable-handle {
+  cursor: move;
+}
+.column-picker-dialog .column-list .sortable-chosen {
+  background-color: #fffce7;
+}
+.column-picker-dialog .column-list .fa-sort {
+  margin: 0px 7px;
+  margin-top: 9px;
+  margin-right: -15px;
+}
+.column-picker-dialog .column-list .form-control {
+  display: inline-block;
+  width: 89%;
+}
+@media (max-width: 767px) {
+  .column-picker-dialog .column-list .form-control {
+    width: 77%;
+  }
+}
+.column-picker-dialog .column-list .close {
+  margin: 2px 7px 0px;
+}
+.column-picker-dialog .add-btn {
+  margin-bottom: 2px;
+}
+
+/* palette colors*/
+.datatable {
+  margin-left: -1px;
+  margin-top: -1px;
+  font-size: 12px;
+}
+.datatable .frappe-control,
+.datatable .form-control {
+  margin: 0;
+  border-radius: 0px;
+  border: none;
+  background-color: transparent;
+}
+.datatable .form-group {
+  margin: 0;
+}
+.datatable .link-btn {
+  top: 6px;
+}
+.datatable select {
+  height: 27px;
+}
+.datatable .checkbox {
+  margin: 7px 0 7px 8px;
+}
+.datatable [data-fieldtype="Color"] .control-input {
+  overflow: hidden;
+}
+.dt-scrollable {
+  max-height: calc(100vh - 250px);
+  min-height: 100px;
+}
+table td.dt-cell {
+  position: relative;
+}
+.dt-cell__edit {
+  padding: 0;
+}
+.dt-cell__edit input {
+  font-size: inherit;
+  height: 27px;
+}
+.dt-header {
+  --dt-header-cell-bg: #f7fafc;
+  --dt-cell-bg: #f7fafc;
+  --dt-text-color: #8d99a6;
+}
+.dt-header .dt-row[data-is-filter] {
+  display: flex !important;
+}
+.dt-row {
+  height: 35px;
+}
+.dt-row.dt-row-totalRow {
+  font-weight: bold;
+}
+.dt-row.row-update {
+  animation: 500ms breathe forwards;
+}
+.report-action-checkbox {
+  margin: 0;
+  margin-left: 10px;
+}
+.report-action-checkbox .checkbox {
+  margin: 0;
+}
+.report-action-checkbox .help-box {
+  display: none;
+}
+.dt-filter {
+  border: 1px solid #ebeff2;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.dt-tree-node__toggle + a {
+  margin-left: 4px;
+}
+@keyframes breathe {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #fffdf4;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
 :root {
     --dt-border-color: #d1d8dd;
     --dt-primary-color: rgb(82, 146, 247);
@@ -353,148 +497,4 @@
 
 body.dt-resize {
     cursor: col-resize;
-}
-
-/* palette colors*/
-.grid-report .plot {
-  margin: 15px;
-  display: none;
-  height: 300px !important;
-  width: 97% !important;
-}
-.grid-report .ui-widget {
-  border: none !important;
-  outline: none !important;
-  border-top: 1px solid #d1d8dd !important;
-  background-color: #fafbfc !important;
-}
-.grid-report .show-zero {
-  margin: 10px;
-  display: none;
-}
-.column-picker-dialog .column-list {
-  margin: 15px 0;
-  border: 1px solid #d1d8dd;
-}
-.column-picker-dialog .column-list .column-list-item {
-  padding: 10px;
-  border-bottom: 1px solid #d1d8dd;
-}
-.column-picker-dialog .column-list .column-list-item:last-child {
-  border-bottom: none;
-}
-.column-picker-dialog .column-list .sortable-handle {
-  cursor: move;
-}
-.column-picker-dialog .column-list .sortable-chosen {
-  background-color: #fffce7;
-}
-.column-picker-dialog .column-list .fa-sort {
-  margin: 0px 7px;
-  margin-top: 9px;
-  margin-right: -15px;
-}
-.column-picker-dialog .column-list .form-control {
-  display: inline-block;
-  width: 89%;
-}
-@media (max-width: 767px) {
-  .column-picker-dialog .column-list .form-control {
-    width: 77%;
-  }
-}
-.column-picker-dialog .column-list .close {
-  margin: 2px 7px 0px;
-}
-.column-picker-dialog .add-btn {
-  margin-bottom: 2px;
-}
-
-/* palette colors*/
-.datatable {
-  margin-left: -1px;
-  margin-top: -1px;
-  font-size: 12px;
-}
-.datatable .frappe-control,
-.datatable .form-control {
-  margin: 0;
-  border-radius: 0px;
-  border: none;
-  background-color: transparent;
-}
-.datatable .form-group {
-  margin: 0;
-}
-.datatable .link-btn {
-  top: 6px;
-}
-.datatable select {
-  height: 27px;
-}
-.datatable .checkbox {
-  margin: 7px 0 7px 8px;
-}
-.datatable [data-fieldtype="Color"] .control-input {
-  overflow: hidden;
-}
-.dt-scrollable {
-  max-height: calc(100vh - 250px);
-  min-height: 100px;
-}
-table td.dt-cell {
-  position: relative;
-}
-.dt-cell__edit {
-  padding: 0;
-}
-.dt-cell__edit input {
-  font-size: inherit;
-  height: 27px;
-}
-.dt-header {
-  --dt-header-cell-bg: #f7fafc;
-  --dt-cell-bg: #f7fafc;
-  --dt-text-color: #8d99a6;
-}
-.dt-header .dt-row[data-is-filter] {
-  display: flex !important;
-}
-.dt-row {
-  height: 35px;
-}
-.dt-row.dt-row-totalRow {
-  font-weight: bold;
-}
-.dt-row.row-update {
-  animation: 500ms breathe forwards;
-}
-.report-action-checkbox {
-  margin: 0;
-  margin-left: 10px;
-}
-.report-action-checkbox .checkbox {
-  margin: 0;
-}
-.report-action-checkbox .help-box {
-  display: none;
-}
-.dt-filter {
-  border: 1px solid #ebeff2;
-  border-radius: 3px;
-  background-color: #fff;
-}
-.dt-tree-node__toggle + a {
-  margin-left: 4px;
-}
-@keyframes breathe {
-  0% {
-    background-color: transparent;
-  }
-  50% {
-    background-color: #fffdf4;
-  }
-  100% {
-    background-color: transparent;
-  }
 }
