@@ -2,7 +2,7 @@
 # MIT License. See license.txt
 from __future__ import unicode_literals
 
-import pdfkit, os, frappe
+import  os, frappe
 from frappe.utils import scrub_urls
 from frappe import _
 from bs4 import BeautifulSoup
@@ -20,7 +20,7 @@ def get_pdf(html, options=None, output = None):
 	})
 
 	try:
-		pdfkit.from_string(html, fname, options=options or {})
+		#pdfkit.from_string(html, fname, options=options or {})
 		if output:
 			append_pdf(PdfFileReader(fname),output)
 		else:
