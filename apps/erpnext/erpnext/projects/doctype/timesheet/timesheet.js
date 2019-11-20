@@ -163,8 +163,10 @@ frappe.ui.form.on("Timesheet Detail", {
 
 		if (std_working_hours < hours && std_working_hours > 0) {
 			frappe.model.set_value(cdt, cdn, "hours", std_working_hours);
+			frappe.model.set_value(cdt, cdn, "minutes", std_working_hours*60);//calculate time in minutes
 		} else {
 			frappe.model.set_value(cdt, cdn, "hours", hours);
+			frappe.model.set_value(cdt, cdn, "minutes", hours*60);//calculate time in minutes
 		}
 	},
 
@@ -178,7 +180,16 @@ frappe.ui.form.on("Timesheet Detail", {
 		});
 	},
 	hours: function(frm, cdt, cdn) {
+		//calculate minute hours on change  -------------20-11-2019
+		var d= locals[cdt][cdn]
+		frappe.model.set_value(cdt, cdn, "minutes",d.hours*60)
+		//-------------------------
 		calculate_end_time(frm, cdt, cdn);
+	},
+	//function on minutes change added on 19-11-2019
+	minutes: function(frm, cdt, cdn) {
+		var d= locals[cdt][cdn]
+		frappe.model.set_value(cdt, cdn, "hours",d.minutes/60)
 	},
 
 	billing_hours: function(frm, cdt, cdn) {
@@ -238,6 +249,7 @@ var calculate_end_time = function(frm, cdt, cdn) {
 
 		if (std_working_hours < hours && std_working_hours > 0) {
 			frappe.model.set_value(cdt, cdn, "hours", std_working_hours);
+			frappe.model.set_value(cdt, cdn, "minutes", std_working_hours*60);
 			frappe.model.set_value(cdt, cdn, "to_time", d.add(hours, "hours").format(frappe.defaultDatetimeFormat));
 		} else {
 			d.add(child.hours, "hours");

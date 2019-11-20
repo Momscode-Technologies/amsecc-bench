@@ -1,0 +1,66 @@
+[DEBUG] 2019-11-16 04:42:55,369 | /home/umoms/amsecc-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: amsecc-site1
+Access denied for site amsecc-site1
+[ERROR] 2019-11-16 04:43:57,616 | /home/umoms/amsecc-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: amsecc-site1
+Exception in Enqueue Events for Site amsecc-site1
+Traceback (most recent call last):
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/utils/scheduler.py", line 93, in enqueue_events_for_site
+    if is_scheduler_disabled():
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/utils/scheduler.py", line 237, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/database.py", line 642, in get_single_value
+    tabSingles where doctype=%s and field=%s""", (doctype, fieldname))
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/database.py", line 199, in sql
+    self._cursor.execute(query, values)
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table '96254700573b73f1.tabSingles' doesn't exist")
+
+[ERROR] 2019-11-16 06:59:23,099 | /home/umoms/amsecc-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: amsecc-site1
+Exception in Enqueue Events for Site amsecc-site1
+Traceback (most recent call last):
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 583, in connect
+    **kwargs)
+  File "/usr/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/utils/scheduler.py", line 93, in enqueue_events_for_site
+    if is_scheduler_disabled():
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/utils/scheduler.py", line 237, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/database.py", line 642, in get_single_value
+    tabSingles where doctype=%s and field=%s""", (doctype, fieldname))
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/database.py", line 165, in sql
+    self.connect()
+  File "/home/umoms/amsecc-bench/apps/frappe/frappe/database.py", line 115, in connect
+    charset='utf8mb4', use_unicode = True, conv = conversions, local_infile = self.local_infile)
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/home/umoms/amsecc-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+

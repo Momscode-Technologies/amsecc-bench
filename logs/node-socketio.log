@@ -1,0 +1,172 @@
+listening on *: 9001
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+No response for doc_subscribe
+No response for doc_subscribe
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+No response for doc_subscribe
+No response for doc_subscribe
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+{ Error: getaddrinfo ENOTFOUND amsecc.test amsecc.test:80
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'amsecc.test',
+  host: 'amsecc.test',
+  port: 80,
+  response: undefined }
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe
+No response for doc_subscribe

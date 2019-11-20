@@ -1,0 +1,19 @@
+07:01:56 RQ worker 'rq:worker:umoms.2125.default' started, version 0.12.0
+07:01:56 *** Listening on default...
+07:01:56 Cleaning registries for queue: default
+07:01:56 RQ worker 'rq:worker:umoms.2128.long' started, version 0.12.0
+07:01:56 *** Listening on long...
+07:01:56 Cleaning registries for queue: long
+07:01:56 RQ worker 'rq:worker:umoms.2126.short' started, version 0.12.0
+07:01:56 *** Listening on short...
+07:01:56 Cleaning registries for queue: short
+08:27:36 default: frappe.utils.background_jobs.execute_job(event='data_import', is_async=True, job_name='Import on 16-11-2019 13:57:13', kwargs={'data_import_doc': 'Import on 16-11-2019 13:57:13', 'from_data_import': 'Yes', 'user': 'administrator@amsecc.com'}, method=<function upload at 0x7f9e84024950>, site='amsecc-site1', user='administrator@amsecc.com') (f4bc38ca-4d84-454a-b1e4-ab515c1cc6b3)
+08:27:39 default: Job OK (f4bc38ca-4d84-454a-b1e4-ab515c1cc6b3)
+08:27:39 Result is kept for 500 seconds
+08:27:39 Cleaning registries for queue: default
+08:28:01 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Item', 'name': 'LA Work'}, method='frappe.model.delete_doc.delete_dynamic_links', site='amsecc-site1', user='administrator@amsecc.com') (26774be0-7525-4806-a822-7fbb1e7b86e8)
+08:28:01 default: Job OK (26774be0-7525-4806-a822-7fbb1e7b86e8)
+08:28:01 Result is kept for 500 seconds
+08:28:07 default: frappe.utils.background_jobs.execute_job(event='data_import', is_async=True, job_name='Import on 16-11-2019 13:57:13', kwargs={'data_import_doc': 'Import on 16-11-2019 13:57:13', 'from_data_import': 'Yes', 'user': 'administrator@amsecc.com'}, method=<function upload at 0x7f9e84024950>, site='amsecc-site1', user='administrator@amsecc.com') (a83776eb-a5ac-49cf-850d-a1c988b792cc)
+08:28:10 default: Job OK (a83776eb-a5ac-49cf-850d-a1c988b792cc)
+08:28:10 Result is kept for 500 seconds
