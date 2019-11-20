@@ -188,7 +188,6 @@ frappe.ui.form.on("Timesheet Detail", {
 	},
 	//function on minutes change added on 19-11-2019
 	minutes: function(frm, cdt, cdn) {
-		//commented for test
 		var d= locals[cdt][cdn]
 		frappe.model.set_value(cdt, cdn, "hours",d.minutes/60)
 	},
